@@ -8,9 +8,11 @@
 }
 
 * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@700&display=swap");
@@ -54,8 +56,8 @@ body {
   position: absolute;
   width: 564px;
   height: 84px;
-  left: 100px;
-  top: 300px;
+  left: 80px;
+  top: 200px;
   font-family: "Arima Madurai";
   font-style: normal;
   font-size: 39px;
@@ -65,9 +67,10 @@ body {
   position: absolute;
   width: 659px;
   height: 64px;
-  left: 100px;
-  top: 360px;
+  left: 80px;
+  top: 260px;
   font-size: 20px;
+  text-align: justify;
 }
 span {
   color: #ff6b00;
@@ -77,12 +80,13 @@ span {
   width: 190px;
   height: 68px;
   left: 100px;
-  top: 430px;
+  top: 330px;
   background-color: #ff6b00;
   text-align: center;
   color: white;
   border: none;
   border-radius: 130px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px 0px, rgba(0, 0, 0, 0.23) 0px 3px 6px 0px;
 }
 .button:hover {
   background-color: #ffefe3;
@@ -90,188 +94,105 @@ span {
   border-radius: 130px;
   color: #ff6b00;
 }
-.hero-image {
-  position: absolute;
-  width: 498px;
-  height: 652.43px;
-  left: 842px;
-  top: 186px;
-  float: left;
+
+.flex-container {
   display: flex;
-}
-
-/* DISSOLVE */
-/* EDIT the following values to adjust the carousel to yoru needs */
-/* width of the carousel */
-/* height of the carousel */
-/* the number of items in the carousel */
-/* time during which a carousel item is fully visible */
-/* duration of the transition between two carousel items*/
-/* END EDIT */
-.dissolve {
-  width: 287px;
-  height: 430px;
-  position: relative;
-  overflow: hidden;
-}
-.dissolve .item {
-  position: absolute;
-  left: 0;
-  right: 0;
-  opacity: 0;
-  animation: dissolve 20s linear infinite;
-}
-.dissolve .item:nth-child(2) {
-  animation-delay: 5s;
-}
-.dissolve .item:nth-child(3) {
-  animation-delay: 10s;
-}
-.dissolve .item:nth-child(4) {
-  animation-delay: 15s;
-}
-.dissolve .item:nth-child(5) {
-  animation-delay: 20s;
-}
-.dissolve .item:nth-child(6) {
-  animation-delay: 25s;
-}
-.dissolve .item:nth-child(7) {
-  animation-delay: 35s;
-}
-.dissolve .item:nth-child(8) {
-  animation-delay: 40s;
-}
-.dissolve .item:nth-child(9) {
-  animation-delay: 45s;
-}
-/* 
-/* The keyframes calculations are based on assumption of 4 items in the carousel. 
-/* You should notice the pattern for your own calculations. */
-/* If you plan to support Safari 4 for any reason, you *must* have 0% and 100% frames */
-@-webkit-keyframes dissolve {
-  0%, 30%, 100% {
-     opacity: 0;
- }
-  5%, 25% {
-     opacity: 1;
- }
-}
-@-moz-keyframes dissolve {
-  0%, 30%, 100% {
-     opacity: 0;
- }
-  5%, 25% {
-     opacity: 1;
- }
-}
-@-ms-keyframes dissolve {
-  0%, 30%, 100% {
-     opacity: 0;
- }
-  5%, 25% {
-     opacity: 1;
- }
-}
-@keyframes dissolve {
-  0%, 30%, 100% {
-     opacity: 0;
- }
-  5%, 25% {
-     opacity: 1;
- }
-}
-@keyframes dissolve {
-  0%, 30%, 100% {
-     opacity: 0;
- }
-  5%, 25% {
-     opacity: 1;
- }
-}
-@keyframes dissolve {
-  0%, 30%, 100% {
-     opacity: 0;
- }
-  5%, 25% {
-     opacity: 1;
- }
-}
-@keyframes dissolve {
-  0%, 30%, 100% {
-     opacity: 0;
- }
-  5%, 25% {
-     opacity: 1;
- }
-}
-@keyframes dissolve {
-  0%, 30%, 100% {
-     opacity: 0;
- }
-  5%, 25% {
-     opacity: 1;
- }
-}
-@keyframes dissolve {
-  0%, 30%, 100% {
-     opacity: 0;
- }
-  5%, 25% {
-     opacity: 1;
- }
-}
-@keyframes dissolve {
-  0%, 30%, 100% {
-     opacity: 0;
- }
-  5%, 25% {
-     opacity: 1;
- }
-}
-
-img {
-  max-width: 100%;
-  display: block;
-}
-
-figure {
-  width: 287px;
-  margin: 10px auto 0;
-}
-figure .carousel {
-  width: 350px;
-  box-shadow: 0 0 0 10px #fff, 0 0.3em 0.8em 10px black;
-}
-figure figcaption {
-  text-transform: uppercase;
-  margin-top: 10px;
-  padding-top: 0.5em;
-  font-size: 1.2em;
-  text-align: center;
-  color: rgb(10, 10, 10);
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: stretch;
+  align-content: center;
+  padding: 10px;
+  margin: auto;
   
 }
-figure figcaption:before, figure figcaption:after {
-  content: "\2014";
-  font-family: "Times New Roman", serif;
-  text-shadow: none;
-  color: rgba(255, 255, 255, 0.2);
-}
-figure figcaption:before {
-  margin-right: 0.3em;
-}
-figure figcaption:after {
-  margin-left: 0.3em;
-}
-figure p {
-  color: #999;
-  text-align: center;
-}
-figure p a {
-  color: #ff6b00;
-}
-figure p a:hover{
-  color: #ee853a;
 
+.flex-items:nth-child(1) {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+  position: relative;
+}
+
+.flex-items:nth-child(2) {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 1;
+  position: relative;
+  margin-top: 2rem;
+}
+.over-img{
+  position: absolute;
+  top: 70px;
+  right: 150px;
+  width: 350px;
+  border: 2px solid black;
+  transition: transform .2s;
+}
+.over-img:hover{
+  transform: scale(1.1);
+}
+
+.lap-img{
+  position: relative;
+  top: 100px;
+  right: 20px;
+  width: 300px;
+  border: 2px solid black;
+  transition: transform .2s;
+}
+.lap-img:hover{
+  transform: scale(1.1);
+}
+.lap-img2{
+  position: relative;
+  top: 100px;
+  right: 10px;
+  width: 300px;
+  border: 2px solid black;
+  transition: transform .2s;
+}
+.lap-img2:hover{
+  transform: scale(1.1);
+}
+
+img{
+  width: 300px;
+  margin: 0;
+  border-radius: 10px;
+  
+}
+.heading{
+  position: absolute;
+  width: 80px;
+  height: 39px;
+  left: 680px;
+  top: 770px;
+  color: #170A00;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: 'Arima Madurai';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 39px;
+}
+.arrow{
+  box-sizing: border-box;
+  position: absolute;
+  width: 38px;
+  height: 30px;
+  left: 700px;
+  top: 813px;
+  animation: bounce 0.8s infinite alternate;
+
+}
+@keyframes bounce{ 
+  0% { transform: translateY(3); } 
+  100% { transform: translateY(-20px); } 
 }
