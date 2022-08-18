@@ -32,9 +32,6 @@ function App() {
               <img src={require("../src/images/grad1.JPG")} alt="" className='lap-img2 img-box' />
               <img src={require("../src/images/grad3.JPG")} alt="" className='lap-img img-box' />
               <img src={require("../src/images/grad2.JPG")} alt="" className='over-img img-box'/>
-              <div className='overlay'>
-                <p className='msg'>Mighty Pictures Photography</p>
-              </div>
             </div>
           </div>
           
@@ -44,6 +41,7 @@ function App() {
           <img src="https://img.icons8.com/ios-filled/100/ff6b00/long-arrow-down.png" alt='' className='arrow'/>
         </div>
       </main>
+    
     </body>
   );
 }
