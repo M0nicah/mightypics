@@ -18,7 +18,6 @@ function App() {
             <a class="nav-link link" href="!#">Contacts</a>
           </li>
         </ul>
-        
       </div>
       <main>
         <div class="flex-container">
