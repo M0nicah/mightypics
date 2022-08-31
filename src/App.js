@@ -43,6 +43,7 @@ function App() {
           <img src="https://img.icons8.com/ios-filled/100/ff6b00/long-arrow-down.png" alt='' className='arrow'/>
         </div>
       </main>
+    
     </body>
   );
 }
