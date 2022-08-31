@@ -29,6 +29,7 @@ h6 {
 body {
   background-color: #ffefe3;
   width: 100vw;
+  min-width: 500px;
   height: 100vh;
   font-family: "Arima Madurai", cursive;
   justify-content: center;
@@ -52,6 +53,7 @@ body {
   margin: 10px;
   font-weight: 900;
 }
+
 .hero-text {
   position: absolute;
   width: 564px;
@@ -75,6 +77,14 @@ body {
 }
 span {
   color: #ff6b00;
+}
+.icon{
+  color: #ff6b00;
+  padding: 4px;
+  
+}
+.icon:hover{
+  color: #000000;
 }
 .button {
   position: absolute;
@@ -175,11 +185,7 @@ img{
   top: 770px;
   color: #170A00;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  font-family: 'Arima Madurai';
-  font-style: normal;
-  font-weight: 700;
   font-size: 24px;
-  line-height: 39px;
 }
 .arrow{
   box-sizing: border-box;
@@ -189,9 +195,106 @@ img{
   left: 700px;
   top: 813px;
   animation: bounce 0.8s infinite alternate;
-
 }
 @keyframes bounce{ 
   0% { transform: translateY(3); } 
   100% { transform: translateY(-20px); } 
+}
+@media only screen and (max-width: 576px) {
+  .link{
+    font-size: 30px;
+    margin: 5px;
+    padding: 5px;
+    margin-top: 10px;
+    text-align: center;
+  }
+  body{
+    min-width: 595px;
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+  }
+  .hero-text{
+    font-size: 46px;
+    text-align: justify;
+    margin-top: -25px;
+  }
+  .text{
+    font-weight: 400;
+    font-size: 25px;
+    color: #000000;
+    text-align: justify;
+    margin-top: -25px;
+  }
+  .hero-img{
+    position: absolute;
+    width: 272px;
+    height: 356.35px;
+    left: 59px;
+    top: 237px;
+  }
+  .flex-items:nth-child(2){
+    position: absolute;
+    width: 272px;
+    height: 356.35px;
+    left: 59px;
+    top: 237px;
+  }
+  .over-img{
+    position: absolute;
+    width: 226.29px;
+    height: 390.35px;
+    left: 97.86px;
+    top: 237px;
+  }
+  .lap-img{
+    position: absolute;
+    width: 246.29px;
+    height: 340.75px;
+    left: 136.71px;
+    top: 259.27px;
+  }
+  .lap-img2{
+    position: absolute;
+    width: 246.34px;
+    height: 340.75px;
+    left: 59px;
+    top: 259.27px;
+  }
+  .button{
+    position: absolute;
+    width: 165.68px;
+    height: 43.84px;
+    top: 800px;
+  }
+  .arrow{
+    position: absolute;
+    width: 22.05px;
+    height: 0px;
+    left: 195px;
+    top: 805.95px;
+
+  }
+  .heading{
+    position: absolute;
+    width: 46px;
+    height: 23px;
+    left: 171.79px;
+    top: 781px;
+    font-weight: 700;
+    font-size: 13.9259px;
+  }
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: stretch;
+    align-content: center;
+  }
+
 }

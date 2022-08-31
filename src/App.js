@@ -1,6 +1,9 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
 import './App.css';
+import { BsCameraReelsFill } from "react-icons/bs";
+import { IoMdPhotos} from "react-icons/io";
+import { MdPermContactCalendar} from "react-icons/md";
 
 function App() {
 
@@ -9,13 +12,13 @@ function App() {
       <div>
         <ul class="nav justify-content-center">
           <li class="nav-item">
-            <a class="nav-link active link" aria-current="page" href="!#">About</a>
+            <a class="nav-link active link" aria-current="page" href="!#"><span className='icon'><BsCameraReelsFill size="23px"/></span>About Us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link link" href="!#">Gallery</a>
+            <a class="nav-link link" href="!#"> <span className='icon'><IoMdPhotos size="23px"/></span>Gallery</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link link" href="!#">Contacts</a>
+            <a class="nav-link link" href="!#"><span className='icon'><MdPermContactCalendar size="23px"/></span>Contacts</a>
           </li>
         </ul>
       </div>
@@ -31,9 +34,6 @@ function App() {
               <img src={require("../src/images/grad1.JPG")} alt="" className='lap-img2 img-box' />
               <img src={require("../src/images/grad3.JPG")} alt="" className='lap-img img-box' />
               <img src={require("../src/images/grad2.JPG")} alt="" className='over-img img-box'/>
-              <div className='overlay'>
-                <p className='msg'>Mighty Pictures Photography</p>
-              </div>
             </div>
           </div>
           
